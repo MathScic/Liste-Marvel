@@ -1,0 +1,61 @@
+.container {
+  position: relative; /* Parent positionné pour les éléments en absolute */
+  margin: 0;
+  height: 100vh; /* Par exemple pour couvrir toute la hauteur de la fenêtre */
+}
+
+h1 {
+  position: absolute;
+  top: 35%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  font-size: 3rem;
+  z-index: 10;
+  padding: 0.5rem;
+}
+
+h4 {
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.box-content {
+  color: white;
+  font-size: 1.3rem;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("../../public/images/marvel-banner.jpg");
+  position: relative;
+  z-index: 1;
+}
+
+.box-content img {
+  width: 400px;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.box-content img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 500ms;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+.right-box {
+  flex-basis: 20%;
+}
+
+.left-box {
+  flex-basis: 50%;
+  background-color: transparent;
+}

@@ -1,0 +1,26 @@
+.bg img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.search-bar img,
+input {
+  border-radius: 10px;
+}
+
+.search {
+  margin-top: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
